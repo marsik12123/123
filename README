@@ -1,2 +1,32 @@
-first project
+# Arduino Multi-Sensor Alarm Clock
 
+This project is an Arduino-based alarm clock system developed as part of a programming course. It utilizes real-time clock (RTC) modules and environmental sensors to provide timekeeping and monitoring functionality.
+
+## Features
+* **Real-Time Clock (RTC):** Accurate time tracking using the Makuna/RTC library.
+* **Environmental Monitoring:** Temperature and humidity tracking using the DHT sensor library.
+* **Display Interface:** Real-time data visualization via an I2C LCD display.
+* **Modular Code Structure:** Organized with specialized wrappers for sensors and hardware components.
+
+## Tech Stack
+* **Language:** C++
+* **Platform:** PlatformIO (Arduino framework)
+* **Hardware:**
+  * Arduino Uno
+  * DHT Sensor
+  * I2C LCD Module
+  * RTC Module
+
+## Project Structure
+* `/src`: Main application logic.
+* `/lib`: Custom wrappers for hardware components (`sensors.h`, `lcd_wrapper.h`, `rtc_wrapper.h`).
+* `platformio.ini`: Configuration file for dependencies and build settings.
+
+## Getting Started
+1. Clone this repository.
+2. Open the folder in VS Code with the PlatformIO extension installed.
+3. PlatformIO will automatically install the necessary libraries defined in `platformio.ini` (Makuna/RTC, DHT sensor library, etc.).
+4. Build and upload the code to your Arduino Uno board.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
